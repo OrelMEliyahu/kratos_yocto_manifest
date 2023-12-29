@@ -30,7 +30,8 @@
   </project>
 	  
   <project name="kratos_meta-bsp-kratos" path="sources/meta-bsp-kratos" remote="kratos" revision="master">
-    <linkfile dest="modular-tools" src="modular-tools"/>
+	  <linkfile dest="modular-tools" src="modular-tools"/>
+	  <linkfile dest="kratos-setup-release.sh" src="kratos-setup-release.sh"/>		  
   </project>
 
   <project name="meta-nxp-demo-experience" path="sources/meta-nxp-demo-experience" remote="imx-support" revision="52eaf8bf42f8eda2917a1c8c046003c8c2c8f629" upstream="kirkstone-5.15.71-2.2.0"/>
