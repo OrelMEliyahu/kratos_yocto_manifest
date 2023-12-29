@@ -12,6 +12,7 @@
   <remote fetch="https://github.com/openembedded" name="oe"/>
   <remote fetch="https://git.yoctoproject.org/git" name="yocto"/>
   <remote fetch="https://github.com/nxp-imx-support" name="imx-support"/>
+  <remote fetch="https://github.com/deadpoolcode1" name="kratos"/>
 
   <project name="fsl-community-bsp-base" path="sources/base" remote="community" revision="60f79f7af60537146298560079ae603260f0bd14" upstream="kirkstone">
     <linkfile dest="README" src="README"/>
@@ -26,6 +27,10 @@
   <project name="meta-imx" path="sources/meta-imx" remote="nxp-imx" revision="refs/tags/rel_imx_5.15.71_2.2.2" upstream="kirkstone-5.15.71-2.2.2">
     <linkfile dest="imx-setup-release.sh" src="tools/imx-setup-release.sh"/>
     <linkfile dest="README-IMXBSP" src="README"/>
+  </project>
+	  
+  <project name="kratos_meta-bsp-kratos" path="sources/meta-bsp-kratos" remote="kratos" revision="master">
+    <linkfile dest="modular-tools" src="modular-tools"/>
   </project>
 
   <project name="meta-nxp-demo-experience" path="sources/meta-nxp-demo-experience" remote="imx-support" revision="52eaf8bf42f8eda2917a1c8c046003c8c2c8f629" upstream="kirkstone-5.15.71-2.2.0"/>
